@@ -1,6 +1,11 @@
 package main
 
+import "fmt"
+
 func main() {
 	app := New()
-	app.Run()
+	err := app.Run()
+	if err != nil {
+		fmt.Printf("%+v", err)
+	}
 }
