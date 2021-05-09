@@ -1,5 +1,7 @@
 # AboutGo
 
+## errorWrap
+
 数据库层面:
 
     return errors.Warf(sql.ErrNoRows, "db: sql exec failed with no data")
@@ -10,3 +12,7 @@
     if errors.Is(err, sql.ErrNoRows) {
         // do something
     }
+
+
+## Lifecycle
+
